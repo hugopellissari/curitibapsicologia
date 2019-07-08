@@ -1,0 +1,109 @@
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Trhee Column */
+
+	.three-column {
+		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		border-top: 0 !important;
+        padding: 2em 3em 3em 2em;
+
+		& + * {
+			border-top: 0 !important;
+		}
+        
+        .major {
+            margin: 0 auto;
+        }
+
+        .inner {
+            display: block;
+            padding: 2em 1em 2em 1em !important
+        }
+
+		div {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'flex');
+			@include vendor('transition', (
+				'transform 0.25s ease',
+				'opacity 0.25s ease',
+				'filter 1s ease',
+				'-webkit-filter 1s ease'
+			));
+			@include padding(4em, 4em);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			cursor: default;
+			height: 40vh;
+			max-height: 40em;
+			min-height: 23em;
+			overflow: hidden;
+			position: relative;
+            flex: 1;
+			width: 40%;
+
+            
+			.image {
+				display: none;
+			}
+
+			header {
+				position: relative;
+				z-index: 3;
+			}
+            
+            p {
+                margin-bottom: 10px;
+                text-align: center;
+                padding: 0.5em 1em 1em 1em
+            }
+            
+            .description {
+                text-transform: None;
+            }
+
+
+		}
+
+		@include breakpoint(large) {
+			div {
+				@include padding(4em, 3em);
+				height: 30vh;
+				max-height: 30em;
+				min-height: 20em;
+			}
+		}
+
+		@include breakpoint(medium) {
+			div {
+				width: 50% !important;
+			}
+		}
+
+		@include breakpoint(small) {
+			div {
+				@include padding(3em, 1.5em);
+				height: 16em;
+				max-height: none;
+				min-height: 0;
+
+				h3 {
+					font-size: 1.5em;
+				}
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			display: block;
+
+			div {
+				height: 20em;
+				width: 100% !important;
+			}
+		}
+	}

@@ -1,0 +1,36 @@
+# site settings
+title: Psicologia Curitiba
+subtitle: 
+email: email@gmail.com
+description: Descrição explicando a importancia de se fazer terapia, como um tratamento com profissionais qualificados pode melhorar a qualidade de vida do individuo, e para todos, não apenas para os doentes
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address: Rua Sete de Abril, 440 - Alto da XV
+city: Curitiba 
+state: PR
+zip_code: 82590-300
+country: Brasil
+phone: (41) 9 9999-9999
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/andrewbanchich
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
