@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Psicologia Curitiba'
+landing-title: 'Curitiba Psicologia e Arte'
 description: null
 image: null
 author: null
