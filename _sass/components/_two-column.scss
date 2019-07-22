@@ -24,18 +24,16 @@
 				'filter 1s ease',
 				'-webkit-filter 1s ease'
 			));
-			@include padding(4em, 4em);
+			@include padding(2em, 2em);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			cursor: default;
-			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
 			overflow: hidden;
 			position: relative;
             flex: 1;
 			width: 40%;
+			display: block;
 
 			.image {
 				display: none;
@@ -56,6 +54,7 @@
 
 			h3 {
 				font-size: 1.75em;
+
 			}
 
 			.link.primary {
@@ -77,19 +76,7 @@
 				opacity: 0.85;
 				position: absolute;
 				width: 100%;
-				z-index: 2;
-			}
-
-			&:after {
-				background-color: transparentize(_palette(bg), 0.75);
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				z-index: 1;
+				z-index: 3;
 			}
 
 
@@ -132,25 +119,27 @@
 
 		@include breakpoint(large) {
 			div {
-				@include padding(4em, 3em);
-				height: 30vh;
-				max-height: 30em;
-				min-height: 20em;
+				@include padding(2em, 3em);
 			}
 		}
 
 		@include breakpoint(medium) {
+			display: block;
+			header {
+				margin: 0 auto;
+			}
+			ul {
+				margin: 0 auto;
+			}
 			div {
-				width: 50% !important;
+				width: 100%;
 			}
 		}
 
 		@include breakpoint(small) {
+			display: block;
 			div {
-				@include padding(3em, 1.5em);
-				height: 16em;
-				max-height: none;
-				min-height: 0;
+				@include padding(2em, 1.5em);
 
 				h3 {
 					font-size: 1.5em;

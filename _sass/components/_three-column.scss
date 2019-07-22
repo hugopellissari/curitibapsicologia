@@ -10,7 +10,7 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		border-top: 0 !important;
-        padding: 2em 3em 3em 2em;
+        padding: 2em 3em 1em 2em !important;
 
 		& + * {
 			border-top: 0 !important;
@@ -22,8 +22,8 @@
 
         .inner {
             display: block;
-            padding: 2em 1em 2em 1em !important
-        }
+		}
+		
 
 		div {
 			@include vendor('align-items', 'center');
@@ -44,7 +44,8 @@
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
-            flex: 1;
+			flex: 1;
+			flex-basis: 100px;
 			width: 40%;
 
             
@@ -74,18 +75,23 @@
 			div {
 				@include padding(4em, 3em);
 				height: 30vh;
-				max-height: 30em;
-				min-height: 20em;
+				max-height: 35em;
+				min-height: 22em;
 			}
 		}
 
 		@include breakpoint(medium) {
+			display: block;
 			div {
-				width: 50% !important;
+				@include padding(3em, 1.5em);
+				height: 16em;
+				max-height: none;
+				min-height: 0;
 			}
 		}
 
 		@include breakpoint(small) {
+			display: block;
 			div {
 				@include padding(3em, 1.5em);
 				height: 16em;
