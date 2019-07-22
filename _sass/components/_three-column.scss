@@ -22,6 +22,7 @@
 
         .inner {
             display: block;
+            padding: 2em 1em 2em 1em !important
 		}
 		
 
@@ -75,19 +76,13 @@
 			div {
 				@include padding(4em, 3em);
 				height: 30vh;
-				max-height: 35em;
-				min-height: 22em;
+				max-height: 30em;
+				min-height: 20em;
 			}
 		}
 
 		@include breakpoint(medium) {
 			display: block;
-			div {
-				@include padding(3em, 1.5em);
-				height: 16em;
-				max-height: none;
-				min-height: 0;
-			}
 		}
 
 		@include breakpoint(small) {
