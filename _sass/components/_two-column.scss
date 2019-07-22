@@ -15,6 +15,11 @@
 			border-top: 0 !important;
 		}
 
+		ul {
+			position: relative;
+			z-index: 10;	
+		}
+
 		div {
 			@include vendor('align-items', 'center');
 			@include vendor('display', 'flex');
