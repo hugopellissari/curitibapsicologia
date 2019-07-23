@@ -83,6 +83,12 @@
 
 		@include breakpoint(medium) {
 			display: block;
+			div {
+				@include padding(3em, 1.5em);
+				height: 16em;
+				max-height: none;
+				min-height: 0;
+			}
 		}
 
 		@include breakpoint(small) {

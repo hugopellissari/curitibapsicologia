@@ -45,7 +45,6 @@
 			}
 
 			header {
-				margin: 0 auto;
 				position: relative;
 				z-index: 3;
 			}
@@ -132,9 +131,6 @@
 
 		@include breakpoint(medium) {
 			display: block;
-			header {
-				margin: 0 auto;
-			}
 			ul {
 				margin: 0 auto;
 			}
