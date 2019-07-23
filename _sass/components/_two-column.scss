@@ -125,7 +125,7 @@
 
 		@include breakpoint(large) {
 			div {
-				@include padding(2em, 3em);
+				@include padding(3em, 4em);
 			}
 		}
 
